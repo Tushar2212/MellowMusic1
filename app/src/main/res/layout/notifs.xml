@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutNotifs"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp">
+        <ImageView
+        android:id="@+id/ivNotifs"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:background="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/tvNotifs"
+        android:layout_width="220dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@+id/ivNotifs"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_toRightOf="@+id/ivNotifs"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/ivNotifPrev"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/ivNotifs"
+        android:layout_alignLeft="@+id/tvNotifs"
+        android:layout_alignStart="@+id/tvNotifs"
+        android:layout_below="@+id/tvNotifs"
+        android:layout_marginTop="14dp"
+        android:background="@android:drawable/ic_media_previous" />
+
+    <ImageButton
+        android:id="@+id/ivNotifPlay"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@android:drawable/ic_media_pause"
+        android:layout_alignTop="@+id/ivNotifPrev"
+        android:layout_toLeftOf="@+id/ivNotifNext"
+        android:layout_toStartOf="@+id/ivNotifNext"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBottom="@+id/ivNotifPrev" />
+    <ImageButton
+        android:id="@+id/ivNotifPause"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@android:drawable/ic_media_play"
+        android:layout_alignTop="@+id/ivNotifPrev"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/ivNotifs"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/ivNotifNext"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/ivNotifPlay"
+        android:layout_alignEnd="@+id/tvNotifs"
+        android:layout_alignRight="@+id/tvNotifs"
+        android:layout_alignTop="@+id/ivNotifPlay"
+        android:background="@android:drawable/ic_media_next" />
+
+    <ImageButton
+        android:id="@+id/ivClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_toEndOf="@+id/tvNotifs"
+        android:layout_toRightOf="@+id/tvNotifs"
+        android:layout_alignBottom="@+id/tvNotifs" />
+    </RelativeLayout>
+    </LinearLayout>

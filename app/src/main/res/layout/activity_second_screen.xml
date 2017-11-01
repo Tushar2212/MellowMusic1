@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mukeshsharma.mymusic.SecondScreen">
+
+
+    <TextView
+        android:id="@+id/tvTitle2ndScreen"
+        android:textSize="25dp"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="13dp"
+        android:text="Now Playing"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvArtist2ndScreen"
+        android:textSize="16dp"
+        android:layout_width="220dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Current Artist"
+        android:layout_below="@+id/tvTitle2ndScreen"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/ivArtis2ndScrren"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignLeft="@+id/tvTitle2ndScreen"
+        android:layout_alignStart="@+id/tvTitle2ndScreen"
+        android:layout_below="@+id/tvArtist2ndScreen"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@android:drawable/presence_invisible"
+        android:layout_alignRight="@+id/tvTitle2ndScreen"
+        android:layout_alignEnd="@+id/tvTitle2ndScreen" />
+
+    <Chronometer
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tvCurrDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/ivArtis2ndScrren"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:countDown="true"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="3"
+        android:layout_alignTop="@+id/tvCurrDuration"
+        android:layout_alignLeft="@+id/ivArtis2ndScrren"
+        android:layout_alignStart="@+id/ivArtis2ndScrren"
+        android:layout_toLeftOf="@+id/tvMaxDuration2ndScreen"
+        android:layout_toStartOf="@+id/tvMaxDuration2ndScreen" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/tvMaxDuration2ndScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/seekBar"
+        android:text="0.00" />
+
+
+    <ImageButton
+        android:layout_marginLeft="40dp"
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:background="@android:drawable/ic_media_previous"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_media_play"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_media_next"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_toLeftOf="@+id/tvMaxDuration2ndScreen"
+        android:layout_toStartOf="@+id/tvMaxDuration2ndScreen" />
+
+    <Button
+        android:background="@null"
+        android:id="@+id/btnShuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shuffle"
+        android:layout_below="@+id/seekBar"
+        android:layout_toLeftOf="@+id/imageButton3"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:background="@null"
+        android:id="@+id/btnRep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnShuffle"
+        android:layout_toEndOf="@+id/imageButton"
+        android:layout_toRightOf="@+id/imageButton"
+        android:text="Repeat" />
+</RelativeLayout>

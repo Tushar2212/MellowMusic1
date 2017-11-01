@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mukeshsharma.mymusic.SplashScreen">
+    <ImageView
+        android:id="@+id/inSplashScreen"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:src="@drawable/mello1"/>
+    <ProgressBar
+        android:id="@+id/barSplashScreen"
+        android:layout_marginStart="165dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="165dp" />
+    <TextView
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="MellowMusic"
+        android:textSize="35dp"
+        android:id="@+id/tvSplashScreen"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>
